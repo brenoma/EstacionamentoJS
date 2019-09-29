@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Estacionamento JS
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <meta charset="utf-8">
+    </head>
+    <body onload="mostraPatio()";></body>
+    <body>
+        <div class="container">
+            <div class="header clearfix">
+                <h2>Estacionamento JS <small>por: Breno Menezes</small></h2>
+            </div>
+            <div class="jumbotron">
+                <form id="formulario">
+                    <div id="aviso"></div>
+                    <div class="form-group">
+                        <label for="modeloCarro">Modelo do veículo:</label>
+                        <input type="text" id="modeloCarro" class="form-control" placeholder="Modelo">
+                    </div>
+                    <div class="form-group">
+                        <label for="placaCarro">Placa do veículo:</label>
+                        <input type="text" id="placaCarro" name ="" class="form-control" maxlength="7" placeholder="Placa">
+                    </div>
+                    <div class="form-group">
+                            <label>Pago?</label>
+                            <tr><th><input type="radio" id="cPago" name ="tPagamento" class="form-control"></th> <label for="cPago">Sim</label>
+                            <th><input type="radio" id="cNPago" name ="tPagamento" class="form-control"></th></tr> <label for="cNPago">Não</label>
+                        </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+
+            <div class="row marketing">
+                <div class="col-lg-12">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Placa</th>
+                                <th>Entrada</th>
+                                <!-- <th>Pagamento</th> -->
+                                <th>Saída</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultados"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
